@@ -28,11 +28,11 @@ Looking ahead, I plan to deepen my research in Multimodal Large Models. I am act
 
 📧 My email is **ruiqiyang0516 [at] gmail.com**
 
-# 🎖 Honors and Awards
+# 🥇 Honors and Awards
 - *2025.11*  I achieved the **First Prize** (Top 0.03%) in the **2025 China Collegiate Computing Contest** (HCI Innovation Track) for the *PicMusic AI Agent*, co-developed with [Yuxuan Luo](https://yuuxuanluo.github.io/) and Zhuochen Liu under the guidance of [Prof. Wei Xiang](https://person.zju.edu.cn/en/0617496#0).
 - *2025.10*  I received the **Zhejiang Provincial Government Scholarship**
 
-# 📖 Research Experiences
+# ⌨️ Research Experiences
 
 <div class='paper-box'><div class='paper-box-image' style="max-width: 100px !important; min-width: 100px !important;"><div><img src='images/CUHK.png' alt="CUHK" style="width: 80px !important; height: 80px !important; box-shadow: none !important;"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -41,22 +41,24 @@ Looking ahead, I plan to deepen my research in Multimodal Large Models. I am act
 
 **The Chinese University of Hong Kong (CUHK) - MMLab**
 
-**Advisor:** [Prof. Xiangyu Yue](https://xyue.io/)
+**Advisor:** [**Prof. Xiangyu Yue**](https://xyue.io/)
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image' style="max-width: 100px !important; min-width: 100px !important;"><div><img src='images/zju.png' alt="CUHK" style="width: 80px !important; height: 80px !important; box-shadow: none !important;"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Undergraduate Researcher** · *2024.12 - 2025.10*
+**Research Intern** · *2024.12 - 2025.10*
 
 **Zhejiang University**
 
-**Advisor:** [Prof. Yingke Xu](https://person.zju.edu.cn/en/yingkexu)
+**Advisor:** [**Prof. Yingke Xu**](https://person.zju.edu.cn/en/yingkexu)
 </div>
 </div>
 
-
+# 📖 Educations
+- *2023.09 - Present*  **B.Eng.** Candidate in Biomedical Engineering(Instrument Engineering), Zhejiang University.
+- *2020.09 - 2023.06* **High School**, Hangzhou No.2 High School of Zhejiang Province
 
 # 📝 Publications 
 Cooking... 👨‍🍳
