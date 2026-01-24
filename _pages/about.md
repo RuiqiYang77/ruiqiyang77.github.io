@@ -24,7 +24,7 @@ My research journey began under the supervision of [**Prof. Yingke Xu**](https:/
 
 Driven to explore the foundational architectures of vision, I am currently a remote research intern at **CUHK MMLab** under [**Prof. Xiangyu Yue**](https://xyue.io/). Here, my work focuses on **Visual Encoders and Unified Multimodal Large Language Models**. 
 
-Looking ahead, I plan to deepen my research in Multimodal Large Models. I am actively seeking PhD opportunities for Fall 2027 and welcome discussions with potential collaborators and mentors.
+Looking ahead, I plan to deepen my research in Multimodal Large Models and Vision Language Models. I am actively seeking PhD opportunities for Fall 2027 and welcome discussions with potential collaborators and mentors.
 
 📧 My email is **ruiqiyang0516 [at] gmail.com**
 
