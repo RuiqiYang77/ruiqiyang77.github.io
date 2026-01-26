@@ -22,7 +22,7 @@ I am a third-year undergraduate student at **Zhejiang University**, majoring in 
 
 My research journey began under the supervision of [**Prof. Yingke Xu**](https://person.zju.edu.cn/en/yingkexu), where I explored the intersection of **Generative Models and Optical Imaging**. This experience sparked my intense interest in Artificial Intelligence.
 
-Driven to explore the foundational architectures of vision, I am currently a remote research intern at **CUHK MMLab** under [**Prof. Xiangyu Yue**](https://xyue.io/). Here, my work focuses on **Visual Encoders and Unified Multimodal Large Language Models**. 
+Driven to explore the foundational architectures of vision, I am currently a remote research intern at **CUHK MMLab** under [**Prof. Xiangyu Yue**](https://xyue.io/). Here, my work focuses on **Unified Visual Encoders and Unified Multimodal Models**. 
 
 Looking ahead, I plan to deepen my research in Multimodal Large Models and Vision Language Models. I am actively seeking PhD opportunities for Fall 2027 and welcome discussions with potential collaborators and mentors.
 
