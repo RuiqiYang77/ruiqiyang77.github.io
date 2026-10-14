@@ -9,6 +9,7 @@
   margin-right: 0;
   width: 100%;
   clear: both;
+  font-family: $sans-serif;
   /* sticky footer fix start */
   position: absolute;
   bottom: 0em;
@@ -32,7 +33,7 @@
     padding: 0 1em 2em;
 
     @include breakpoint($x-large) {
-      max-width: $x-large;
+      max-width: $content-max-width;
     }
   }
 
@@ -54,7 +55,7 @@
 }
 
 .page__footer-copyright {
-  font-family: $global-font-family;
+  font-family: $sans-serif;
   font-size: $type-size-7;
 }
 

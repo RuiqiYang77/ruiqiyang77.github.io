@@ -1,0 +1,8 @@
+<nav class="section-nav" aria-label="Page contents">
+  <span class="section-nav__title">Contents</span>
+  <ul>
+    {% for link in site.data.navigation.main %}
+      <li><a href="{{ link.url | relative_url }}" target="_self">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

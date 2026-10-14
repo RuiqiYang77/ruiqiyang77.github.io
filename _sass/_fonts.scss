@@ -1,0 +1,46 @@
+/*
+ * Open-source alternatives for Claude's serif reading / sans-serif UI style.
+ * Local Latin subsets keep font loading small; the stacks in _variables.scss
+ * provide system fallbacks for Chinese and other scripts.
+ * Sources and SIL Open Font Licenses: assets/fonts/README.md.
+ */
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/lora-latin-variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/lora-latin-italic-variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/dm-sans-latin-variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/dm-sans-latin-italic-variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("../fonts/jetbrains-mono-latin-variable.woff2") format("woff2");
+}

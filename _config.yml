@@ -7,7 +7,7 @@
 
 # Site Setting
 title                    : "Ruiqi Yang"
-description              : "Welcome to Ruiqi Yang's Homepage!"
+description              : ""
 repository               : "RuiqiYang77/ruiqiyang77.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -22,22 +22,22 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Ruiqi Yang"
-  avatar           : "images/avatar.jpg"
+  avatar           : "images/avatar.png"
   bio              : "Zhejiang University"
   location         : 
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=Dd7uc4wAAAAJ&hl=en"
+  googlescholar    : 
   email            : "ruiqiyang0516@gmail.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://eclogue.pages.dev/"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "RuiqiYang77"
+  github           : 
   google_plus      :
   keybase          :
   instagram        :
@@ -45,7 +45,7 @@ author:
   lastfm           :
   linkedin         : "ruiqiyang77"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : https://orcid.org/0009-0009-8345-8909
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username

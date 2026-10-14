@@ -15,6 +15,8 @@
 
   @include breakpoint($large) {
     @include span(2 of 12);
+    top: 2em;
+    padding-top: 1.5rem;
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -132,7 +134,8 @@
   @include breakpoint($medium) {
     font-size: $type-size-3;
   }
-  font-family: $sans-serif;
+  font-family: $header-font-family;
+  font-weight: 500;
   font-size: $type-size-4;
 }
 
@@ -266,5 +269,69 @@
   }
   @include breakpoint($large) {
     display: none;
+  }
+}
+
+/* Section navigation below the author profile. */
+.section-nav {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid $border-color;
+  font-family: $sans-serif;
+
+  &__title {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: $gray;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid $border-color;
+    list-style: none;
+  }
+
+  li {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+
+  a {
+    display: block;
+    margin-left: -1px;
+    padding: 0.4rem 0 0.4rem 0.875rem;
+    border-left: 2px solid transparent;
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      border-left-color: $link-color;
+      color: $link-color;
+    }
+  }
+
+  @include breakpoint(max-width ($large - 1px)) {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1.25rem;
+      border-left: 0;
+    }
+
+    a {
+      margin-left: 0;
+      padding: 0.25rem 0;
+      border-left: 0;
+    }
   }
 }

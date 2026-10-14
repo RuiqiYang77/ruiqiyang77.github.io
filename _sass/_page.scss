@@ -5,14 +5,20 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 1em;
+  margin-top: clamp(2rem, 5vw, 4rem);
   padding-left: 1em;
   padding-right: 1em;
+  padding-bottom: clamp(3rem, 7vw, 6rem);
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
+  @include breakpoint($large) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    max-width: $content-max-width;
   }
 }
 
@@ -49,17 +55,6 @@
 }
 
 .page__content {
-  #about-me{
-    margin-top: -10em;
-      &:before { 
-        content: ''; 
-        display: block; 
-        position: relative; 
-        width: 0; 
-        height: 10em; 
-        margin-top: -10em;
-    }
-  }
   h1 {
     margin-top: 1em;
     padding-bottom: 0.5em;
@@ -97,13 +92,13 @@
 
   dt {
     margin-top: 1em;
-    font-family: $sans-serif;
-    font-weight: bold;
+    font-family: $global-font-family;
+    font-weight: 600;
   }
 
   dd {
     margin-left: 1em;
-    font-family: $sans-serif;
+    font-family: $global-font-family;
     font-size: $type-size-6;
   }
 
@@ -115,6 +110,40 @@
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
+  }
+}
+
+.page__updated {
+  clear: both;
+  padding-top: 3rem;
+  color: $gray;
+  font-family: $sans-serif;
+  font-size: 0.75rem;
+}
+
+.older-news {
+  margin: 0.75rem 0 1rem;
+
+  summary {
+    display: list-item;
+    width: fit-content;
+    color: $dark-gray;
+    font-family: $sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    &::marker {
+      color: $gray;
+    }
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  &[open] summary {
+    margin-bottom: 0.75rem;
   }
 }
 
@@ -145,7 +174,7 @@
       padding-right: 1em;
 
       @include breakpoint($x-large) {
-        max-width: $x-large;
+        max-width: $content-max-width;
       }
     }
 

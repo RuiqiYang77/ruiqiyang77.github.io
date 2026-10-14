@@ -176,6 +176,8 @@
   position: relative;
   min-width: 250px;
   background: $background-color;
+  font-family: $sans-serif;
+  font-weight: 500;
 
   a {
     display: block;
@@ -209,7 +211,7 @@
       vertical-align: middle;
 
       &:first-child {
-        font-weight: bold;
+        font-weight: 600;
 
         a {
           margin-left: 0;
