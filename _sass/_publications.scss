@@ -1,0 +1,125 @@
+.publication {
+  display: grid;
+  gap: 1.25rem;
+  padding: 0.5rem 0 1.5rem;
+
+  & + & {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--theme-border);
+  }
+
+  @include breakpoint($medium) {
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.75fr);
+    align-items: start;
+    gap: 1.5rem;
+  }
+}
+
+.publication__media {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.publication__preview {
+  overflow: hidden;
+  border: 1px solid var(--theme-border);
+  border-radius: 8px;
+  background: var(--theme-surface);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.publication__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  aspect-ratio: 16 / 10;
+  color: var(--theme-muted);
+  font-family: $sans-serif;
+  font-size: 0.85rem;
+
+  i {
+    margin-bottom: 0.25rem;
+    font-size: 1.75rem;
+  }
+
+  small {
+    font-size: 0.7rem;
+  }
+}
+
+.page__content .publication__title {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.publication__authors p {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.page__content .publication__venue {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.4rem;
+  z-index: 1;
+  display: inline-block;
+  margin: 0;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  background: var(--theme-link);
+  color: var(--theme-background);
+  font-family: $sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.publication__resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.page__content .publication__resource {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--theme-border);
+  border-radius: 5px;
+  color: var(--theme-link);
+  font-family: $sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-decoration: none;
+
+  &[aria-disabled="true"] {
+    color: var(--theme-muted);
+    border-style: dashed;
+    cursor: default;
+  }
+}
+
+.page__content a.publication__resource {
+  &:hover {
+    background: var(--theme-surface);
+    border-color: var(--theme-link);
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--theme-link);
+    outline-offset: 3px;
+  }
+}

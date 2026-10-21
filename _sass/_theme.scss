@@ -1,0 +1,139 @@
+:root {
+  color-scheme: light;
+  --theme-background: #fff;
+  --theme-surface: #f5f6f8;
+  --theme-text: #494e52;
+  --theme-muted: #7a8288;
+  --theme-border: #b8b5ad;
+  --theme-link: #224b8d;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --theme-background: #191c22;
+  --theme-surface: #242932;
+  --theme-text: #dce0e7;
+  --theme-muted: #a2aab7;
+  --theme-border: #444b58;
+  --theme-link: #9bbdf0;
+
+  body {
+    color: var(--theme-text);
+  }
+
+  a {
+    color: var(--theme-link);
+  }
+
+  .author__urls a,
+  .author__urls_sm a {
+    color: inherit;
+  }
+
+  .author__urls-wrapper .author__cv-placeholder,
+  .page__updated,
+  .section-nav__title,
+  .older-news summary::marker {
+    color: var(--theme-muted);
+  }
+
+  .section-nav,
+  .section-nav ul,
+  .page__content h1,
+  .author__avatar img,
+  hr {
+    border-color: var(--theme-border);
+  }
+
+  .section-nav a,
+  .older-news summary {
+    color: var(--theme-text);
+  }
+
+  .section-nav a:hover,
+  .section-nav a:focus-visible,
+  .older-news summary:hover {
+    color: var(--theme-link);
+    border-left-color: var(--theme-link);
+  }
+
+  p > code,
+  a > code,
+  li > code,
+  figcaption > code,
+  td > code {
+    color: #edb4bd;
+    background: var(--theme-surface);
+    border-color: var(--theme-border);
+    box-shadow: none;
+  }
+
+  ::selection {
+    color: #edf4ff;
+    background: #36557c;
+  }
+
+  ::-moz-selection {
+    color: #edf4ff;
+    background: #36557c;
+  }
+}
+
+html {
+  background-color: var(--theme-background);
+}
+
+.theme-toggle {
+  position: fixed;
+  top: max(1rem, env(safe-area-inset-top));
+  right: max(1rem, env(safe-area-inset-right));
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--theme-border);
+  border-radius: 50%;
+  background: var(--theme-background);
+  color: var(--theme-text);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+
+  &[hidden] {
+    display: none;
+  }
+
+  &:hover {
+    background: var(--theme-surface);
+    color: var(--theme-link);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--theme-link);
+    outline-offset: 3px;
+  }
+}
+
+.theme-toggle__sun,
+html[data-theme="dark"] .theme-toggle__moon {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-toggle__sun {
+  display: inline-block;
+}
+
+@include breakpoint(max-width ($large - 1px)) {
+  #main {
+    margin-top: 4.5rem;
+  }
+}
+
+@media print {
+  .theme-toggle {
+    display: none;
+  }
+}

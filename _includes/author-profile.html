@@ -31,6 +31,13 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
       {% endif %}
+      <li>
+        {% if author.cv and author.cv != empty %}
+          <a href="{{ author.cv | relative_url | escape }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV</a>
+        {% else %}
+          <span class="author__cv-placeholder" role="link" aria-disabled="true" title="CV coming soon"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV</span>
+        {% endif %}
+      </li>
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
       {% endif %}
@@ -125,6 +132,11 @@
       {% endif %}
       {% if author.email %}
         <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.cv and author.cv != empty %}
+        <a href="{{ author.cv | relative_url | escape }}" aria-label="CV" title="CV"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>
+      {% else %}
+        <span class="author__cv-placeholder" role="link" aria-disabled="true" aria-label="CV coming soon" title="CV coming soon"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></span>
       {% endif %}
       {% if author.keybase %}
         <a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i></a>

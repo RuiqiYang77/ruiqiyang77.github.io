@@ -1,0 +1,16 @@
+- title: "One Unified Representation: Resolving the Appearance-Semantics Dilemma via Structural Regularization"
+  authors: "**Ruiqi Yang**, Fei Zhou, Yi Zhang, Liang Li, Xiangyu Yue"
+  venue: "NeurIPS 2026"
+  demo_image: "/images/paper/01_one-unified-representation.png"
+  demo_alt: "Architecture of One Unified Representation with structural regularization and a pixel decoder"
+  # Fill in each URL when ready; empty URLs display as disabled placeholders.
+  resources:
+    - label: "Paper"
+      icon: "fas fa-file-pdf"
+      url:
+    - label: "Code"
+      icon: "fab fa-github"
+      url:
+    - label: "Project Page"
+      icon: "fas fa-globe"
+      url:

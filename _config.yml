@@ -29,8 +29,9 @@ author:
   pubmed           : 
   googlescholar    : 
   email            : "ruiqiyang0516@gmail.com"
+  cv               :  # Add the PDF path here, e.g. /files/cv.pdf
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  uri              : "https://eclogue.pages.dev/"
+  uri              :
   bitbucket        :
   codepen          :
   dribbble         :

@@ -1,0 +1,33 @@
+<div class="publications">
+  {% for publication in site.data.publications %}
+  <article class="publication">
+    <div class="publication__media">
+      <p class="publication__venue"><strong>{{ publication.venue | escape }}</strong></p>
+      <div class="publication__preview">
+        {% if publication.demo_image and publication.demo_image != empty %}
+        <img src="{{ publication.demo_image | relative_url | escape }}" alt="{{ publication.demo_alt | default: publication.title | escape }}" loading="lazy">
+        {% else %}
+        <div class="publication__placeholder" role="img" aria-label="Demo preview coming soon">
+          <i class="fas fa-image" aria-hidden="true"></i>
+          <span>Demo preview</span>
+          <small>Coming soon</small>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="publication__details">
+      <h2 class="publication__title">{{ publication.title | escape }}</h2>
+      <div class="publication__authors">{{ publication.authors | markdownify }}</div>
+      <div class="publication__resources" aria-label="Publication resources">
+        {% for resource in publication.resources %}
+          {% if resource.url and resource.url != empty %}
+          <a class="publication__resource" href="{{ resource.url | relative_url | escape }}"><i class="{{ resource.icon | escape }}" aria-hidden="true"></i> {{ resource.label | escape }}</a>
+          {% else %}
+          <span class="publication__resource" role="link" aria-disabled="true" title="{{ resource.label | escape }} coming soon"><i class="{{ resource.icon | escape }}" aria-hidden="true"></i> {{ resource.label | escape }}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>

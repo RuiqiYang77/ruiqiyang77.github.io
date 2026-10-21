@@ -240,7 +240,8 @@
     white-space: nowrap;
   }
 
-  a {
+  a,
+  .author__cv-placeholder {
     display: block;
     margin-bottom: 5px;
     padding-right: 5px;
@@ -249,11 +250,16 @@
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.author__urls-wrapper .author__cv-placeholder {
+  color: $gray;
+  cursor: default;
 }
 
 .author__urls_sm{
