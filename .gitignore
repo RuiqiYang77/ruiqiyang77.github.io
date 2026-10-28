@@ -5,3 +5,8 @@ push.sh
 /.bundle
 /vendor
 /debug.md
+
+# Ignore local notes and drafts; keep the template's public documentation.
+/docs/*
+!/docs/README-zh.md
+!/docs/screenshot.png
